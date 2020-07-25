@@ -1,0 +1,38 @@
+<html>
+<head> 
+	<title> Local and Global Var </title>
+<script>
+
+var b = "Var B";
+function fun1()
+	{
+
+	var a = "Var A";
+document.write("local var a inside fun1() method " + a + "<br\>");
+document.write("local var b inside fun1() method " + b + "<br\>");
+	}
+	
+	function fun2()
+			{
+			var x = "Var X";
+document.write("local var a inside fun1() method " + x + "<br\>");
+document.write("local var a inside fun1() method " + b + "<br\>");
+			}
+
+ 
+fun1();  //Calling my method here
+fun2();  //Calling my method here
+document.write("local var b outside fun1() method " + b + "<br\>");
+	
+</script>
+
+
+</head>
+
+<body> 
+
+</body>
+
+</html>
+
+
