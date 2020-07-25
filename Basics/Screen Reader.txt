@@ -1,0 +1,62 @@
+User story:
+As a screen reader user 
+I want headings to be programetically identified as such 
+so that I can navigate the page by heading and understand its hierarchal organization.
+
+Remediation:
+For each of the Div elements containing the text 'Heading text1' and 'Heading text2' 
+1. Add a role = 'heading' attribute to the <div> element.
+2. Add a aria-level='2' attribute to the <div> element.
+
+Success Criteria:
+
+Given i am using NVDA in Firefox.
+And Given NVDA is in Browser mode.
+When I hit 'H' and 'Shift+H' to navigate among the headings on the page.
+Then 'Heading text1' and 'Heading text2' are listed among the available headings.
+And when I navogate to each one of the headings listed above.
+Then I hear that it is a level to heading.
+
+
+Given I am using NVDA in any web browser lets say Firefox.
+And Given NVDA is in Browser mode.
+For the first time when there is no cover image selected - when I press:
+Down arrow I hear- 'Maximum file size: 30MB'
+Press down arrow - 'Allowed file type: jpg, jpeg, png, bmp'
+Press down arrow - 'No image uploaded'
+Press down arrow - 'blank'
+Press down arrow - 'clickable' 'Text Description'
+Press down arrow - 'Please provide a concise text description of the image.'
+Press down arrow - 'Adding alternative text enables users using screen readers to better understand the image.'
+Press down arrow - 'edit'  'unavailable'
+Press down arrow - 'Example: Yellow Flowers in a vase, Sally's Profile Picture'
+Press down arrow - 'Maximum character count: 125 characters'
+---------------------------------------------------------------------
+For the first time when there exists a cover image selected and the focus is on [UPLOAD] button and I press:
+Down arrow I hear- 'Maximum file size: 30MB'
+Press down arrow - 'Allowed file type: jpg, jpeg, png, bmp'
+Press down arrow - 'graphic  clickable' 'Added alt text for the image' OR if no alt text is given then i hear - 'graphic  clickable' 'origin_69f97ae069b79b4dc04ca12…'
+Press down arrow - 'clickable' 'Text Description'
+Press down arrow - 'Please provide a concise text description of the image.'
+Press down arrow - 'Adding alternative text enables users using screen readers to better understand the image.'
+Press down arrow - 'edit'  'unavailable'
+Press down arrow - 'Example: Yellow Flowers in a vase, Sally's Profile Picture'
+Press down arrow - 'Maximum character count: 125 characters'
+
+-----------------
+Given I am using NVDA in any web browser lets say Firefox.
+And Given NVDA is in Focus mode.
+When there is no alt text added for the selected image and the focus is on [UPLOAD] button  - when I press:
+Tab - I hear 'Text Description' 'edit' 'selected' 'Blank' 'Example: Yellow Flowers in a vase, Sally's Profile Picture' 'Maximum character count: 125 characters'
+Tab - 'Add Content  1 of 2'
+Tab - 'Edit Description  2 of 2'
+Tab - 'SAVE  button'
+Tab - 'CLOSE  button'
+
+
+When there exist an alt text for the selected image and the focus is on [UPLOAD] button  - when I press:
+Tab - I hear 'Text Description' 'edit' 'selected' 'user defined alt text' 'Example: Yellow Flowers in a vase, Sally's Profile Picture' 'Maximum character count: 125 characters'
+Tab - 'Add Content  1 of 2'
+Tab - 'Edit Description  2 of 2'
+Tab - 'SAVE  button'
+Tab - 'CLOSE  button'

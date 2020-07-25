@@ -1,0 +1,52 @@
+<html>
+<head> 
+	<title> If else conditions </title>
+<script>
+ 
+ var EngMarks = parseInt(prompt("Enter EngMarks in the prompt popup"));
+ var HindiMarks = parseInt(prompt("Enter HindiMarks in the prompt popup"));
+ var MathsMarks = parseInt(prompt("Enter MathsMarks in the prompt popup"));
+ 
+ var TotalsMarksObtained = EngMarks+HindiMarks+MathsMarks; 
+  
+  document.write("Totals Marks Obtained is = " + TotalsMarksObtained);
+   document.write("<br\>");
+ 
+ var AverageMarks = TotalsMarksObtained/3; 
+
+  
+  if(EngMarks>=35 && HindiMarks>=35 && MathsMarks>=35)
+  {
+  
+  document.write("Student is Passed with AverageMarks = " + AverageMarks + "<br\>");
+		if (AverageMarks>=35 && AverageMarks<60)
+		{
+		document.write("Student is Passed with Grade C");
+		}
+		else if(AverageMarks>=60 && AverageMarks<70)
+		{
+		document.write("Student is Passed with Grade B");
+		}
+		else
+		{
+		document.write("Student is Passed with Grade A");
+		}
+  
+  }
+  else
+  {
+  document.write("Student is Fail");
+  }
+  
+</script>
+</head>
+
+
+<body> 
+
+
+</body>
+
+</html>
+
+
