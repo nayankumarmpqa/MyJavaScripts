@@ -1,0 +1,30 @@
+<html>
+<head> 
+	<title> Onchange image background </title>
+<script>
+
+	function hochangeEvent(valuefromselect)
+	{
+document.body.style.backgroundImage="url('"+valuefromselect+"')";
+	}
+	
+	
+	
+</script>
+
+
+</head>
+
+<body>
+
+<select onchange="hochangeEvent(this.value)">
+	<option value=""> Select a image background</option>
+	<option value="Images/Minuscule ant.jpg"> Minuscule ant 1</option>
+	<option value="Images/Minuscule bug.jpg"> Minuscule bug 2</option>
+	<option value="Images/Minuscule.jpg">Minuscule 3</option>
+</select>
+</body>
+
+</html>
+
+
