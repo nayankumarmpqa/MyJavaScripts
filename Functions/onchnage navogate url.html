@@ -6,8 +6,13 @@
 	function hochangeEvent(valuefromselect)
 	{
 	window.location=valuefromselect;
-	}
 	
+		}
+		
+		function myFunction()
+	{
+	document.body.style.backgroundImage="url('C:\Users\nkumar\Desktop\My Java scripts\Functions\Images\Minuscule bug.jpg')";
+		}
 	
 	
 </script>
@@ -15,14 +20,16 @@
 
 </head>
 
-<body>
-
-<select onchange="hochangeEvent(this.value)">
-	<option value=""> Select a website to nav</option>
-	<option value="https://www.google.com"> Google</option>
+<body onload="myFunction()">
+ 
+<select onchange="hochangeEvent(this.value)" id="mySelect" style="height:50px" >
+	<option value="" > Select a website to navigate</option>
+	<option value="https://www.google.com" style="height:50px"> Google</option>
 	<option value="https://www.vialivetext.com/login"> Via</option>
 	<option value="https://qa.vialivetext.com/login">Via QA</option>
-</select>
+	<option value="https://stage.vialivetext.com/login">Via Staging</option>
+	<option value="https://watermarkinsights.atlassian.net/secure/RapidBoard.jspa?rapidView=22">Protons Sprint Board</option>
+</select>	
 </body>
 
 </html>
