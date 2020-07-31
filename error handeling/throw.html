@@ -1,0 +1,59 @@
+<html>
+<head> 
+	<title>throw </title>
+<script>
+		function validateAge()
+		{
+		
+		try  {
+				var age= document.getElementById("age").value;
+				
+				
+				if (age=="") {
+								throw "Age can not be emplty";
+							 }
+				
+				
+				if (age<18)	{
+							throw  "To young to quote";
+							}
+			}
+				catch (obj)
+				{
+				document.getElementById("errorinfo").innerHTML=obj;
+				
+				//document.write(obj + "<br/>");
+				}
+				
+				finally
+				{
+				document.getElementById("errorinfo2").innerHTML = "Inside Finally";
+				
+				}
+				
+				
+				
+			
+			
+		}		
+			
+		
+</script>
+</head>
+
+<body>
+
+Age: <input type="test" id="age"/>
+<input type="button" onclick = "validateAge()" value='validate'/>
+<p id="errorinfo">
+</p>
+<p id="errorinfo2">
+</p>
+
+
+</body>
+
+</html>
+
+
+

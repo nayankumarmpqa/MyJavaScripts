@@ -1,0 +1,42 @@
+<html>
+<head> 
+	<title>continuousDisplay Date	BIO </title>
+<script>
+		
+		
+		function continuousDisplay(){
+
+		setInterval(displayDate, 1000);
+		
+		}
+		
+		function displayDate(){
+		
+		var d = new Date();	
+		
+		// var x = d.toLocaleTimeString();
+		//var x = d.toLocaleDateString();
+		
+		var x = d.toLocaleString();
+			
+		document.getElementById("dateinfo").innerHTML=d;
+		}
+		
+		
+</script>
+
+
+
+</head>
+
+<body onload="continuousDisplay()">
+Current Date: <br/>
+<p id="dateinfo">
+
+</p>
+</body>
+
+</html>
+
+
+
