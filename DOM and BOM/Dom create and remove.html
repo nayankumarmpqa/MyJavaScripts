@@ -1,0 +1,32 @@
+<html>
+<head> 
+	<title>DOM:Create and Remove</title>
+<script>
+	function handleRemoveonclick()
+	{
+	var parentdiv = document.getElementById("div1");
+		var TextLine1 = document.getElementById("p1");
+		
+		parentdiv.removeChild(TextLine1);
+
+	}
+	
+</script>
+</head>
+
+<body>
+<div id = "div1">
+
+		<p id="p1"> paragraph 1 text </p>
+	
+		<p id="p2"> paragraph 2 text </p>
+</div>
+
+<input type="button" value="Button value is Remove" onclick="handleRemoveonclick()">
+
+</body>
+
+</html>
+
+
+

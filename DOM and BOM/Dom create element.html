@@ -1,0 +1,34 @@
+<html>
+<head> 
+	<title>DOM:Create new element</title>
+<script>
+	function handlecreateonclick()
+	{
+	var parentdiv = document.getElementById("div1");
+		var TextLine3 = document.createElement("p3");
+		var text = document.createTextNode("I am a new line here");
+		
+		TextLine3.appendChild(text);
+		parentdiv.appendChild(TextLine3);
+
+	}
+	
+</script>
+</head>
+
+<body>
+<div id = "div1">
+
+		<p id="p1"> paragraph 1 text </p>
+	
+		<p id="p2"> paragraph 2 text </p>
+</div>
+
+<input type="button" value="Button value is Create" onclick="handlecreateonclick()">
+
+</body>
+
+</html>
+
+
+
